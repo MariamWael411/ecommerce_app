@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
         leading: Image.asset(AppAssets.routeIcon),
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: width * 0.06),
+        padding: EdgeInsets.symmetric(horizontal: width * 0.03),
         child: Column(
           spacing: height * 0.02,
           children: [

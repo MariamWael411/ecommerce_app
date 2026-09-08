@@ -16,4 +16,6 @@ class AppAssets {
   static const String slide1 = '${_path}slide1.png';
   static const String slide2 = '${_path}slide2.png';
   static const String slide3 = '${_path}slide3.png';
+  static const String star = '${_path}star.png';
+  static const String plus = '${_path}plus.png';
 }

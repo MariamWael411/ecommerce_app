@@ -63,5 +63,11 @@ class AppStyles {
       fontWeight: FontWeight.w400,
       color: AppColors.darkBlueColor
   );
-
+  static TextStyle reg11Discount = GoogleFonts.poppins(
+      fontSize: 11,
+      fontWeight: FontWeight.w400,
+      color: AppColors.discountColor,
+      decoration: TextDecoration.lineThrough,
+      decorationColor: AppColors.discountColor
+  );
 }
