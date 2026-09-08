@@ -47,6 +47,7 @@ dependencies:
   flutter_image_slideshow: ^0.1.6
   cached_network_image: ^4.0.0
   readmore: ^3.0.0
+  flutter_native_splash: ^2.4.8
 
 dev_dependencies:
   flutter_test:
