@@ -1,6 +1,7 @@
-import 'dart:ui';
+import 'package:flutter/material.dart';
 
 class AppColors {
+  static Color transparent = Colors.transparent;
   static Color blueColor=Color(0xFF004182);
   static Color strokeColor = Color(0x4D004182);
   static Color discountColor = Color(0x99004182);
@@ -9,4 +10,10 @@ class AppColors {
   static Color redColor=Color(0xFFD10C2B);
   static Color lightBlueColor = Color(0x9906004F);
   static Color darkBlueColor = Color(0xFF06004F);
+  static Color hoverColor = Color(0xFFdfdfdf);
+  static Color brownColor = Color(0xFF2F2929);
+  static Color darkOrangeColor = Color(0xFFBC3018);
+  static Color skyColor = Color(0xFF0973DD);
+  static Color greenColor = Color(0xFF02B935);
+  static Color lightRedColor = Color(0xFFFF645A);
 }

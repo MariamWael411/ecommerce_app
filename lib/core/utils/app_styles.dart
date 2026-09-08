@@ -70,4 +70,35 @@ class AppStyles {
       decoration: TextDecoration.lineThrough,
       decorationColor: AppColors.discountColor
   );
+  static TextStyle med20DarkBlue = GoogleFonts.poppins(
+      fontSize: 20,
+      fontWeight: FontWeight.w500,
+      color: AppColors.darkBlueColor
+  );
+  static TextStyle med14DarkBlue = GoogleFonts.poppins(
+      fontSize: 14,
+      fontWeight: FontWeight.w500,
+      color: AppColors.darkBlueColor
+  );
+  static TextStyle reg14LightBlue = GoogleFonts.poppins(
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: AppColors.lightBlueColor
+  );
+  static TextStyle reg14White = GoogleFonts.poppins(
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: AppColors.whiteColor
+  );
+  static TextStyle med18StrokeBlue = GoogleFonts.poppins(
+      fontSize: 18,
+      fontWeight: FontWeight.w500,
+      color: AppColors.lightBlueColor
+  );
+  static TextStyle med20White = GoogleFonts.poppins(
+      fontSize: 20,
+      fontWeight: FontWeight.w500,
+      color: AppColors.whiteColor
+  );
+
 }

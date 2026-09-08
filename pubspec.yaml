@@ -46,6 +46,7 @@ dependencies:
   dio: ^5.11.0
   flutter_image_slideshow: ^0.1.6
   cached_network_image: ^4.0.0
+  readmore: ^3.0.0
 
 dev_dependencies:
   flutter_test:

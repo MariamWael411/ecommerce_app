@@ -1,3 +1,4 @@
+import 'package:ecommerce/core/utils/app_routes.dart';
 import 'package:ecommerce/features/commerce/screens/home_screen/tabs/product_tab/widget/grid_view_product_item.dart';
 import 'package:flutter/material.dart';
 
@@ -24,7 +25,8 @@ class ProductTab extends StatelessWidget {
             itemBuilder: (context, index) {
               return InkWell(
                   onTap: () {
-
+                    Navigator.of(context).pushNamed(
+                        AppRoutes.productDetailsScreen);
                   },
                   child: GridViewProductItem());
             },

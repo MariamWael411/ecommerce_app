@@ -2,6 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:ecommerce/core/utils/app_routes.dart';
 import 'package:ecommerce/core/utils/app_theme.dart';
 import 'package:ecommerce/features/commerce/screens/home_screen/home_screen.dart';
+import 'package:ecommerce/features/commerce/screens/home_screen/tabs/product_tab/product_details_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'core/di/di.dart';
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget {
       initialRoute:AppRoutes.loginScreen ,
       routes: {AppRoutes.loginScreen: (context) => LoginScreen(),
         AppRoutes.registerScreen: (context) => RegisterScreen(),
-        AppRoutes.homeScreen: (context) => HomeScreen()
+        AppRoutes.homeScreen: (context) => HomeScreen(),
+        AppRoutes.productDetailsScreen: (context) => ProductDetailsScreen()
       },
     );
   }

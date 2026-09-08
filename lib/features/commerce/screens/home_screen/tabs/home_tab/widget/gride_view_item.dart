@@ -23,7 +23,8 @@ class GrideViewItem extends StatelessWidget {
             imageUrl:
                 "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80",
             placeholder: (context, url) =>
-                CircularProgressIndicator(color: AppColors.blueColor),
+                Center(child: CircularProgressIndicator(
+                    color: AppColors.blueColor)),
             errorWidget: (context, url, error) => Icon(Icons.error),
           ),
         ),

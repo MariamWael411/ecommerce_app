@@ -18,4 +18,7 @@ class AppAssets {
   static const String slide3 = '${_path}slide3.png';
   static const String star = '${_path}star.png';
   static const String plus = '${_path}plus.png';
+  static const String plusIcon = '${_path}icon_plus_circler.png';
+  static const String minusIcon = '${_path}icon_minus_circler.png';
+  static const String cart = '${_path}cart.png';
 }
