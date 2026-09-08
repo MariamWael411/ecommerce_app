@@ -24,7 +24,7 @@ class AppStyles {
       color: AppColors.whiteColor
   );
   static TextStyle med18White=GoogleFonts.poppins(
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: FontWeight.w500,
       color: AppColors.whiteColor
   );
@@ -33,4 +33,35 @@ class AppStyles {
       fontWeight: FontWeight.w400,
       color: AppColors.whiteColor
   );
+  static TextStyle bold20Blue = GoogleFonts.poppins(
+      fontSize: 20,
+      fontWeight: FontWeight.bold,
+      color: AppColors.blueColor
+  );
+  static TextStyle reg16Blue = GoogleFonts.poppins(
+      fontSize: 16,
+      fontWeight: FontWeight.w400,
+      color: AppColors.blueColor
+  );
+  static TextStyle light14LightBlue = GoogleFonts.poppins(
+      fontSize: 14,
+      fontWeight: FontWeight.w300,
+      color: AppColors.lightBlueColor
+  );
+  static TextStyle med18DarkBlue = GoogleFonts.poppins(
+      fontSize: 18,
+      fontWeight: FontWeight.w500,
+      color: AppColors.darkBlueColor
+  );
+  static TextStyle reg12DarkBlue = GoogleFonts.poppins(
+      fontSize: 12,
+      fontWeight: FontWeight.w400,
+      color: AppColors.darkBlueColor
+  );
+  static TextStyle reg14DarkBlue = GoogleFonts.poppins(
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: AppColors.darkBlueColor
+  );
+
 }

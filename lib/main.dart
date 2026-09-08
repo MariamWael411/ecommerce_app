@@ -1,9 +1,18 @@
+import 'package:bloc/bloc.dart';
 import 'package:ecommerce/core/utils/app_routes.dart';
-import 'package:ecommerce/features/presentation/auth/login/login_screen.dart';
-import 'package:ecommerce/features/presentation/auth/register/register_screen.dart';
+import 'package:ecommerce/core/utils/app_theme.dart';
+import 'package:ecommerce/features/commerce/screens/home_screen/home_screen.dart';
 import 'package:flutter/material.dart';
 
-void main(){
+import 'core/di/di.dart';
+import 'core/utils/observer.dart';
+import 'features/auth/ui/login/login_screen.dart';
+import 'features/auth/ui/register/register_screen.dart';
+
+
+void main() async {
+  Bloc.observer = MyBlocObserver();
+  configureDependencies();
   runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
@@ -13,9 +22,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: AppTheme.lightTheme,
+      themeMode: ThemeMode.light,
       initialRoute:AppRoutes.loginScreen ,
       routes: {AppRoutes.loginScreen: (context) => LoginScreen(),
-        AppRoutes.registerScreen: (context) => RegisterScreen()},
+        AppRoutes.registerScreen: (context) => RegisterScreen(),
+        AppRoutes.homeScreen: (context) => HomeScreen()
+      },
     );
   }
 }

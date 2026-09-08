@@ -1,0 +1,11 @@
+import 'package:ecommerce/core/utils/resource.dart';
+
+class LoginStates {
+  late Resource<void> loginState;
+
+  LoginStates({required this.loginState});
+
+  LoginStates.initial() {
+    loginState = Resource.initial();
+  }
+}
