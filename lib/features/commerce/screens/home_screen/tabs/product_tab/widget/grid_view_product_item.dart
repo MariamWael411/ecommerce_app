@@ -33,12 +33,13 @@ class GridViewProductItem extends StatelessWidget {
                 child: CachedNetworkImage(
                   fit: BoxFit.fill,
                   width: width * 0.5,
-                  height: height * 0.13,
+                  height: height * 0.16,
 
                   imageUrl:
                       "https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80",
                   placeholder: (context, url) =>
-                      CircularProgressIndicator(color: AppColors.blueColor),
+                      Center(child: CircularProgressIndicator(
+                          color: AppColors.blueColor)),
                   errorWidget: (context, url, error) => Icon(Icons.error),
                 ),
               ),
