@@ -2,11 +2,12 @@ import 'package:ecommerce/core/utils/app_colors.dart';
 import 'package:ecommerce/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../../core/utils/app_config.dart';
+import '../../core/utils/app_config.dart';
 
 class RowColor extends StatelessWidget {
-  RowColor({super.key});
+  RowColor({super.key, this.textStyle});
 
+  TextStyle? textStyle;
   @override
   Widget build(BuildContext context) {
     var height = AppConfig.height(context);
@@ -22,7 +23,7 @@ class RowColor extends StatelessWidget {
             borderRadius: BorderRadius.circular(20),
           ),
         ),
-        Text('Orange color', style: AppStyles.reg14DarkBlue),
+        Text('Orange color', style: textStyle ?? AppStyles.reg14DarkBlue),
       ],
     );
   }

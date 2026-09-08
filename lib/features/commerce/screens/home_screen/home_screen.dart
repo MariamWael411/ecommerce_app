@@ -1,6 +1,7 @@
 import 'package:ecommerce/core/utils/app_assets.dart';
 import 'package:ecommerce/core/utils/app_colors.dart';
 import 'package:ecommerce/core/utils/app_config.dart';
+import 'package:ecommerce/core/utils/app_routes.dart';
 import 'package:ecommerce/core/utils/app_styles.dart';
 import 'package:ecommerce/features/commerce/screens/home_screen/tabs/favorite_tab/favorite_tab.dart';
 import 'package:ecommerce/features/commerce/screens/home_screen/tabs/home_tab/home_tab.dart';
@@ -49,7 +50,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pushNamed(AppRoutes.cartScreen);
+                    },
                     icon: Image.asset(AppAssets.shoppingCartIcon),
                   ),
                 ],

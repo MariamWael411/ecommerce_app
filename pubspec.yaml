@@ -48,6 +48,7 @@ dependencies:
   cached_network_image: ^4.0.0
   readmore: ^3.0.0
   flutter_native_splash: ^2.4.8
+  icon_plus: ^0.1.1
 
 dev_dependencies:
   flutter_test:

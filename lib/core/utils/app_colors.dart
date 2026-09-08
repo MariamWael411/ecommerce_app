@@ -16,4 +16,5 @@ class AppColors {
   static Color skyColor = Color(0xFF0973DD);
   static Color greenColor = Color(0xFF02B935);
   static Color lightRedColor = Color(0xFFFF645A);
+  static Color purpleColor = Color(0xFF6A6695);
 }

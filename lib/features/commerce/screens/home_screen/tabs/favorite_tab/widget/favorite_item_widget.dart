@@ -1,7 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ecommerce/core/utils/app_colors.dart';
 import 'package:ecommerce/core/utils/app_styles.dart';
-import 'package:ecommerce/features/commerce/screens/home_screen/tabs/favorite_tab/widget/row_color.dart';
+import 'package:ecommerce/features/common/row_color.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../../core/utils/app_assets.dart';

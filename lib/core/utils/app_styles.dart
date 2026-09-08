@@ -63,6 +63,11 @@ class AppStyles {
       fontWeight: FontWeight.w400,
       color: AppColors.darkBlueColor
   );
+  static TextStyle reg14Purple = GoogleFonts.poppins(
+      fontSize: 14,
+      fontWeight: FontWeight.w400,
+      color: AppColors.purpleColor
+  );
   static TextStyle reg11Discount = GoogleFonts.poppins(
       fontSize: 11,
       fontWeight: FontWeight.w400,
