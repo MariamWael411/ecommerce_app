@@ -23,7 +23,7 @@ void main() async {
   runApp(MyApp(isLogged: token != null));
 }
 
-}
+
 class MyApp extends StatelessWidget {
   final bool isLogged;
 
