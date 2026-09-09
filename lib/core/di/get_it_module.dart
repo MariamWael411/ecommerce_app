@@ -3,8 +3,8 @@ import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
-import 'api_client.dart';
-import 'api_constant.dart';
+import '../../features/network/api/api_client.dart';
+import '../../features/network/api/api_constant.dart';
 
 @module
 abstract class GetItModule {

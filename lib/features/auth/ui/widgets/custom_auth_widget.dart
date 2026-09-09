@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 
 import '../../../../../core/utils/app_config.dart';
 import '../../../../../core/utils/app_styles.dart';
-import '../../../common/custom_text_form_feild.dart';
+import '../../../common/widgets/custom_text_form_feild.dart';
 
 typedef OnValidator = String? Function(String?)?;
 

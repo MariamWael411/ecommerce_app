@@ -1,8 +1,11 @@
+import 'package:ecommerce/core/cache/shared_prefernces/shared_preferences_utils.dart';
+import 'package:ecommerce/core/di/di.dart';
 import 'package:ecommerce/core/utils/app_colors.dart';
 import 'package:ecommerce/core/utils/app_routes.dart';
 import 'package:ecommerce/core/utils/app_styles.dart';
-import 'package:ecommerce/features/common/custom_text_form_feild.dart';
+import 'package:ecommerce/features/common/widgets/custom_text_form_feild.dart';
 import 'package:flutter/material.dart';
+import 'package:icon_plus/icon_plus.dart';
 
 import '../../../../../../core/utils/app_config.dart';
 
@@ -41,6 +44,8 @@ class _ProfileTabState extends State<ProfileTab> {
                       'mohamed.N@gmail.com', style: AppStyles.med14LightBlue,)
                   ]),
               IconButton(onPressed: () {
+                SharedPreferencesUtils prefernceUtils = getIt();
+                prefernceUtils.removeData(key: 'token');
                 Navigator.of(context).pushNamedAndRemoveUntil(
                   AppRoutes.loginScreen, (route) => false,);
               }, icon: Icon(Icons.logout, color: AppColors.darkBlueColor,)),
@@ -69,7 +74,7 @@ class _ProfileTabState extends State<ProfileTab> {
             suffixIcon: IconButton(
               onPressed: () {},
               icon: Icon(
-                Icons.edit_outlined, color: AppColors.darkBlueColor,),)),
+                Iconsax.edit_2_outline, color: AppColors.darkBlueColor,),)),
         SizedBox(height: height * 0.02,)
       ],
     );

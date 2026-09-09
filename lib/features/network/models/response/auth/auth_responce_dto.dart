@@ -1,4 +1,4 @@
-import 'package:ecommerce/features/auth/data/models/response/auth/user_responce_dto.dart';
+import 'package:ecommerce/features/network/models/response/auth/user_responce_dto.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'auth_responce_dto.g.dart';

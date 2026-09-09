@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:ecommerce/core/cache/shared_prefernces/shared_preferences_utils.dart';
 import 'package:ecommerce/core/utils/app_routes.dart';
 import 'package:ecommerce/core/utils/app_theme.dart';
 import 'package:ecommerce/features/cart/cart_screen.dart';
@@ -13,12 +14,20 @@ import 'features/auth/ui/register/register_screen.dart';
 
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   Bloc.observer = MyBlocObserver();
   configureDependencies();
-  runApp(MyApp());
+  await SharedPreferencesUtils.init();
+  SharedPreferencesUtils preferencesUtils = getIt();
+  String? token = preferencesUtils.getData(key: 'token') as String?;
+  runApp(MyApp(isLogged: token != null));
+}
+
 }
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+  final bool isLogged;
+
+  const MyApp({super.key, this.isLogged = false});
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +35,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       themeMode: ThemeMode.light,
-      initialRoute:AppRoutes.loginScreen ,
+      initialRoute: isLogged ? AppRoutes.homeScreen : AppRoutes.loginScreen,
       routes: {AppRoutes.loginScreen: (context) => LoginScreen(),
         AppRoutes.registerScreen: (context) => RegisterScreen(),
         AppRoutes.homeScreen: (context) => HomeScreen(),

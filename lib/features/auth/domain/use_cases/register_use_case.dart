@@ -2,7 +2,7 @@ import 'package:ecommerce/features/auth/domain/entities/request/register/registe
 import 'package:ecommerce/features/auth/domain/repository/auth_repository.dart';
 import 'package:injectable/injectable.dart';
 
-import '../../../network/api_result.dart';
+import '../../../network/api/api_result.dart';
 
 @lazySingleton
 class RegisterUseCase {

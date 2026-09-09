@@ -12,7 +12,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/utils/app_config.dart';
 import '../../../../core/utils/validation.dart';
-import '../../../common/custom_elevated_button.dart';
+import '../../../common/widgets/custom_elevated_button.dart';
 import '../widgets/custom_auth_widget.dart';
 
 class LoginScreen extends StatefulWidget {

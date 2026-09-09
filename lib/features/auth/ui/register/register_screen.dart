@@ -12,7 +12,7 @@ import '../../../../core/utils/app_strings.dart';
 import '../../../../core/utils/app_styles.dart';
 import '../../../../core/utils/utils_dialog.dart';
 import '../../../../core/utils/validation.dart';
-import '../../../common/custom_elevated_button.dart';
+import '../../../common/widgets/custom_elevated_button.dart';
 import '../widgets/custom_auth_widget.dart';
 
 class RegisterScreen extends StatefulWidget {

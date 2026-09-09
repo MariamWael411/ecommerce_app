@@ -4,7 +4,7 @@ import 'package:ecommerce/features/auth/domain/use_cases/register_use_case.dart'
 import 'package:ecommerce/features/auth/ui/register/cubit/register_states.dart';
 import 'package:injectable/injectable.dart';
 
-import '../../../../../core/utils/resource.dart';
+import '../../../../common/utils/resource.dart';
 
 @injectable
 class RegisterCubit extends Cubit<RegisterStates> {

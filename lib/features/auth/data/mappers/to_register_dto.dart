@@ -1,5 +1,6 @@
-import 'package:ecommerce/features/auth/data/models/request/register/register_request_dto.dart';
 import 'package:ecommerce/features/auth/domain/entities/request/register/register_request.dart';
+
+import '../../../network/models/request/register/register_request_dto.dart';
 
 extension RegisterDto on RegisterRequest {
   RegisterRequestDto toRegisterDto() {

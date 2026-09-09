@@ -1,10 +1,10 @@
 import 'package:dio/dio.dart';
-import 'package:ecommerce/features/auth/data/models/request/login/login_request_dto.dart';
-import 'package:ecommerce/features/auth/data/models/request/register/register_request_dto.dart';
-import 'package:ecommerce/features/auth/data/models/response/auth/auth_responce_dto.dart';
 import 'package:injectable/injectable.dart';
 import 'package:retrofit/retrofit.dart';
 
+import '../models/request/login/login_request_dto.dart';
+import '../models/request/register/register_request_dto.dart';
+import '../models/response/auth/auth_responce_dto.dart';
 import 'end_point.dart';
 
 part 'api_client.g.dart';

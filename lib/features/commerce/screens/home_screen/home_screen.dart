@@ -7,7 +7,7 @@ import 'package:ecommerce/features/commerce/screens/home_screen/tabs/favorite_ta
 import 'package:ecommerce/features/commerce/screens/home_screen/tabs/home_tab/home_tab.dart';
 import 'package:ecommerce/features/commerce/screens/home_screen/tabs/product_tab/product_tab.dart';
 import 'package:ecommerce/features/commerce/screens/home_screen/tabs/profile_tab/profile_tab.dart';
-import 'package:ecommerce/features/common/custom_text_form_feild.dart';
+import 'package:ecommerce/features/common/widgets/custom_text_form_feild.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {

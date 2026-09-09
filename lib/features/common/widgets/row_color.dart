@@ -2,7 +2,7 @@ import 'package:ecommerce/core/utils/app_colors.dart';
 import 'package:ecommerce/core/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
-import '../../core/utils/app_config.dart';
+import '../../../core/utils/app_config.dart';
 
 class RowColor extends StatelessWidget {
   RowColor({super.key, this.textStyle});

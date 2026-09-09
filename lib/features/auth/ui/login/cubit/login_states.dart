@@ -1,4 +1,4 @@
-import 'package:ecommerce/core/utils/resource.dart';
+import 'package:ecommerce/features/common/utils/resource.dart';
 
 class LoginStates {
   late Resource<void> loginState;

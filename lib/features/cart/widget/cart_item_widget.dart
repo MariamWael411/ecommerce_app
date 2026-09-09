@@ -6,7 +6,7 @@ import '../../../core/utils/app_assets.dart';
 import '../../../core/utils/app_colors.dart';
 import '../../../core/utils/app_config.dart';
 import '../../../core/utils/app_styles.dart';
-import '../../common/row_color.dart';
+import '../../common/widgets/row_color.dart';
 
 class CartItemWidget extends StatelessWidget {
   const CartItemWidget({super.key});

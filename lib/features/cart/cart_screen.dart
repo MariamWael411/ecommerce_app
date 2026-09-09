@@ -5,7 +5,7 @@ import '../../core/utils/app_assets.dart';
 import '../../core/utils/app_colors.dart';
 import '../../core/utils/app_config.dart';
 import '../../core/utils/app_styles.dart';
-import '../common/custom_elevated_button.dart';
+import '../common/widgets/custom_elevated_button.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});

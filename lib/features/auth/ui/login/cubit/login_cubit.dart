@@ -1,7 +1,7 @@
-import 'package:ecommerce/core/utils/resource.dart';
 import 'package:ecommerce/features/auth/domain/entities/request/login/login_request.dart';
 import 'package:ecommerce/features/auth/domain/use_cases/login_use_case.dart';
 import 'package:ecommerce/features/auth/ui/login/cubit/login_states.dart';
+import 'package:ecommerce/features/common/utils/resource.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 

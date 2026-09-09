@@ -5,7 +5,7 @@ import 'package:ecommerce/features/commerce/screens/home_screen/tabs/product_tab
 import 'package:ecommerce/features/commerce/screens/home_screen/tabs/product_tab/widget/image_slider.dart';
 import 'package:ecommerce/features/commerce/screens/home_screen/tabs/product_tab/widget/read_more_widget.dart';
 import 'package:ecommerce/features/commerce/screens/home_screen/tabs/product_tab/widget/size_container.dart';
-import 'package:ecommerce/features/common/custom_elevated_button.dart';
+import 'package:ecommerce/features/common/widgets/custom_elevated_button.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/app_config.dart';
