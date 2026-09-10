@@ -1,10 +1,11 @@
 import 'package:ecommerce/core/di/di.dart';
+import 'package:ecommerce/core/utils/app_colors.dart';
 import 'package:ecommerce/core/utils/app_routes.dart';
 import 'package:ecommerce/features/commerce/ui/screens/home_screen/tabs/product_tab/cubit/product_cubit.dart';
 import 'package:ecommerce/features/commerce/ui/screens/home_screen/tabs/product_tab/cubit/product_states.dart';
 import 'package:ecommerce/features/commerce/ui/screens/home_screen/tabs/product_tab/widget/grid_view_product_item.dart';
+import 'package:ecommerce/features/common/widgets/custom_shimmer_widget.dart';
 import 'package:ecommerce/features/common/widgets/main_error_widget.dart';
-import 'package:ecommerce/features/common/widgets/main_loading_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -63,7 +64,20 @@ class _ProductTabState extends State<ProductTab> {
         } else if (state.apiProduct.isError) {
           return MainErrorWidget(errorMessage: state.apiProduct.errorMessage!);
         } else {
-          return MainLoadingWidget();
+          return CustomShimmerWidget(
+            axis: Axis.vertical,
+            aspectRatio: 16 / 24,
+            child: Container(
+              height: height * 0.2,
+              margin: EdgeInsets.symmetric(
+                  horizontal: width * 0.02
+              ),
+              decoration: BoxDecoration(
+                color: AppColors.blueColor,
+                borderRadius: BorderRadius.circular(15),
+              ),
+            ),
+          );
         }
       },
 

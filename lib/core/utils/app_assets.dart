@@ -23,4 +23,5 @@ class AppAssets {
   static const String cart = '${_path}cart.png';
   static const String edit = '${_path}edit.png';
   static const String favorite = '${_path}favorite.png';
+  static const String circlerImage = '${_path}circler_image.png';
 }

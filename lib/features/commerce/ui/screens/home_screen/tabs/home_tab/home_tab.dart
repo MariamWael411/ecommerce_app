@@ -6,9 +6,10 @@ import 'package:ecommerce/features/commerce/domain/entities/category/catogrey_br
 import 'package:ecommerce/features/commerce/ui/screens/cubit/home_cubit.dart';
 import 'package:ecommerce/features/commerce/ui/screens/cubit/home_states.dart';
 import 'package:ecommerce/features/commerce/ui/screens/home_screen/tabs/home_tab/widget/gride_view_item.dart';
+import 'package:ecommerce/features/common/widgets/custom_shimmer_widget.dart';
 import 'package:ecommerce/features/common/widgets/main_error_widget.dart';
-import 'package:ecommerce/features/common/widgets/main_loading_widget.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 
@@ -79,7 +80,7 @@ class _HomeTabState extends State<HomeTab> {
                 return MainErrorWidget(
                     errorMessage: state.apiCategories.errorMessage!);
               } else {
-                return MainLoadingWidget();
+                return CustomShimmerWidget();
               }
             },
           ),
@@ -98,7 +99,7 @@ class _HomeTabState extends State<HomeTab> {
                 return MainErrorWidget(
                     errorMessage: state.apiBrands.errorMessage!);
               } else {
-                return MainLoadingWidget();
+                return CustomShimmerWidget();
               }
             },
           ),
@@ -119,7 +120,7 @@ class _HomeTabState extends State<HomeTab> {
       height: height * 0.3,
       child: GridView.builder(
         scrollDirection: Axis.horizontal,
-        itemCount: 10,
+        itemCount: categoryBrand.length,
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           mainAxisSpacing: width * 0.04,
