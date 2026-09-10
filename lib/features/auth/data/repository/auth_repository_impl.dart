@@ -39,7 +39,8 @@ class AuthRepositoryImpl implements AuthRepository {
             preferenceUtils: _preferencesUtils, responce: apiResult.getData);
         return apiResult;
       } else {
-        return ErrorApiResult(errorMessage: ServerError());
+        return apiResult;
+        //return ErrorApiResult(errorMessage: ServerError());
       }
     }
     return ErrorApiResult(errorMessage: NetworkError());
@@ -56,7 +57,8 @@ class AuthRepositoryImpl implements AuthRepository {
             key: 'token', value: apiResult.getData.token);
         return apiResult;
       } else {
-        return ErrorApiResult(errorMessage: ServerError());
+        return apiResult;
+        // return ErrorApiResult(errorMessage: ServerError());
       }
 
     }

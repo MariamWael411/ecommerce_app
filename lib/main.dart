@@ -3,14 +3,14 @@ import 'package:ecommerce/core/cache/shared_prefernces/shared_preferences_utils.
 import 'package:ecommerce/core/utils/app_routes.dart';
 import 'package:ecommerce/core/utils/app_theme.dart';
 import 'package:ecommerce/features/cart/cart_screen.dart';
-import 'package:ecommerce/features/commerce/screens/home_screen/home_screen.dart';
-import 'package:ecommerce/features/commerce/screens/home_screen/tabs/product_tab/product_details_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'core/di/di.dart';
 import 'core/utils/observer.dart';
 import 'features/auth/ui/login/login_screen.dart';
 import 'features/auth/ui/register/register_screen.dart';
+import 'features/commerce/ui/screens/home_screen/home_screen.dart';
+import 'features/commerce/ui/screens/home_screen/tabs/product_tab/product_details_screen.dart';
 
 
 void main() async {

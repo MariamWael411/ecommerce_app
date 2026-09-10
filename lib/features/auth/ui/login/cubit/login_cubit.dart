@@ -16,7 +16,7 @@ class LoginCubit extends Cubit<LoginStates> {
     LoginRequest loginRequest = LoginRequest(password: password, email: email);
     var result = await _loginUseCase(loginRequest);
     if (result.isSuccess) {
-      emit(LoginStates(loginState: Resource.success()));
+      emit(LoginStates(loginState: Resource.success(data: null)));
     } else {
       emit(
         LoginStates(

@@ -21,16 +21,16 @@ class RegisterCubit extends Cubit<RegisterStates> {
     required String name,
   }) async {
     emit(RegisterStates(registerState: Resource.loading()));
-    RegisterRequest loginRequest = RegisterRequest(
+    RegisterRequest registerRequest = RegisterRequest(
       password: password,
       email: email,
       rePassword: repassword,
       phone: phone,
       name: name,
     );
-    var result = await _registerUseCase(loginRequest);
+    var result = await _registerUseCase(registerRequest);
     if (result.isSuccess) {
-      emit(RegisterStates(registerState: Resource.success()));
+      emit(RegisterStates(registerState: Resource.success(data: null)));
     } else {
       emit(
         RegisterStates(

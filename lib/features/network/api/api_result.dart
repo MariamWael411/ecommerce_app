@@ -12,7 +12,6 @@ sealed class ApiResult<T> {
 
 class SuccessApiResult<T> extends ApiResult<T> {
   T? data;
-
   SuccessApiResult({required this.data});
 }
 

@@ -1,4 +1,6 @@
 import 'package:dio/dio.dart';
+import 'package:ecommerce/features/network/models/response/catogery/catogery_brand_responce_dto.dart';
+import 'package:ecommerce/features/network/models/response/product/product_responce_dto.dart';
 import 'package:injectable/injectable.dart';
 import 'package:retrofit/retrofit.dart';
 
@@ -19,4 +21,13 @@ abstract class ApiClient {
 
   @POST(EndPoint.signUp)
   Future<AuthResponceDto> register(@Body() RegisterRequestDto registerRequest);
+
+  @GET(EndPoint.catogery)
+  Future<CatogeryBrandResponceDto> getCatogeries();
+
+  @GET(EndPoint.brand)
+  Future<CatogeryBrandResponceDto> getBrands();
+
+  @GET(EndPoint.product)
+  Future<ProductResponceDto> getProducts();
 }

@@ -23,11 +23,15 @@ class RegisterScreen extends StatefulWidget {
 }
 
 class _RegisterScreenState extends State<RegisterScreen> {
-  TextEditingController passwordController = TextEditingController();
-  TextEditingController rePasswordController = TextEditingController();
-  TextEditingController emailController = TextEditingController();
-  TextEditingController nameController = TextEditingController();
-  TextEditingController phoneController = TextEditingController();
+  TextEditingController passwordController = TextEditingController(
+      text: 'QWrdswe12@#1');
+  TextEditingController rePasswordController = TextEditingController(
+      text: "QWrdswe12@#1");
+  TextEditingController emailController = TextEditingController(
+      text: 'mariam@gmail.com');
+  TextEditingController nameController = TextEditingController(text: 'mariam');
+  TextEditingController phoneController = TextEditingController(
+      text: '01023456789');
   bool obsurePassword = true;
   bool obsureRePassword = true;
 
@@ -167,6 +171,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           content: state.registerState.errorMessage ?? 'error',
                           title: 'Error',
                           posAction: 'ok',
+                            posActions: () {
+                              print('register Screen ${state.registerState
+                                  .errorMessage }');
+                            }
                         );
                       }
                     },

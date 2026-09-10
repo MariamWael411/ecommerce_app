@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:ecommerce/core/errors/app_error.dart';
 import 'package:ecommerce/features/auth/data/data_source/remote/auth_remote_data_source.dart';
+import 'package:ecommerce/features/network/utils/handle_dio_exception.dart';
 import 'package:injectable/injectable.dart';
 
 import '../../../../network/api/api_client.dart';
@@ -21,8 +22,9 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
       var response = await _apiClient.login(loginRequest);
       return SuccessApiResult(data: response);
     } on DioException catch (e) {
-      String error = e.response?.data['message'];
-      return ErrorApiResult(errorMessage: ServerError(error: error));
+      // String error = e.response?.data['message'];
+      // return ErrorApiResult(errorMessage: ServerError(error: error));
+      return handleDioException(e);
     } catch (e) {
       return ErrorApiResult(errorMessage: UnKnownError());
     }
@@ -36,9 +38,9 @@ class AuthRemoteDataSourceImpl implements AuthRemoteDataSource {
       var response = await _apiClient.register(registerRequest);
       return SuccessApiResult(data: response);
     } on DioException catch (e) {
-      final error =
-          e.response?.data['errors']?['msg'] ?? e.response?.data['message'];
-      return ErrorApiResult(errorMessage: ServerError(error: error));
+      // final errorMessage = e.response?.data['errors']?['msg'] ?? e.response?.data['message']??'something went wrong';
+      // return ErrorApiResult(errorMessage: ServerError(error: errorMessage));
+      return handleDioException(e);
     } catch (e) {
       return ErrorApiResult(errorMessage: UnKnownError());
     }

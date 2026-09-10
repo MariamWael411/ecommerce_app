@@ -15,7 +15,7 @@ class Resource<T> {
     apiStatus = ApiStatus.intial;
   }
 
-  Resource.success() {
+  Resource.success({required this.data}) {
     apiStatus = ApiStatus.success;
   }
 
